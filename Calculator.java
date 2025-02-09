@@ -40,6 +40,20 @@ public void Subtraction(int s1, int s2){
     System.out.println(s1 + "-" + s2 + "=" + dif);
 } 
 
+public void Multiplication(int m1, int m2){
+
+    int product = m1*m2;
+
+    System.out.println(m1 + "*" + m2 + "=" + product);
+} 
+
+public void Division(int d1, int d2){
+
+    int divide = d1/d2;
+
+    System.out.println(d1 + "/" + d2 + "=" + divide);
+} 
+
     public static void main(String[] args) {
         
        Calculator obj = new Calculator();
@@ -50,7 +64,7 @@ public void Subtraction(int s1, int s2){
 
        int a2 = obj.getNum2();
 
-       System.out.println("Would you like the numbers to perform addition or subtraction, put + for addition or - for subtraction?");
+       System.out.println("Would you like the numbers to perform addition, subtraction, multiplication, or division, put + for addition, - for subtraction, * for multiplication, and / for division?");
        
        String o1 = obj.getOption();
 
@@ -62,6 +76,16 @@ public void Subtraction(int s1, int s2){
        if(o1.equals("-")){
 
         obj.Subtraction(a1, a2);
+       }
+
+       if(o1.equals("*")){
+
+        obj.Multiplication(a1, a2);
+       }
+
+       if(o1.equals("/")){
+
+        obj.Division(a1, a2);;
        }
     }
 }
