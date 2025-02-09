@@ -4,16 +4,16 @@ public class Calculator{
 
 Scanner sc = new Scanner(System.in);
 
-public int getNum1(){
+public float getNum1(){
 
-    int n1 = sc.nextInt();
+    float n1 = sc.nextFloat();
 
     return n1;
 }
 
-public int getNum2(){
+public float getNum2(){
 
-    int n2 = sc.nextInt();
+    float n2 = sc.nextFloat();
 
     return n2;
 }
@@ -26,30 +26,30 @@ public String getOption(){
 }
 
 
-public void Addition(int b1, int b2){
+public void Addition(float b1, float b2){
 
-    int sum = b1+b2;
+    float sum = b1+b2;
 
     System.out.println(b1 + "+" + b2 + "=" + sum);
 } 
 
-public void Subtraction(int s1, int s2){
+public void Subtraction(float s1, float s2){
 
-    int dif = s1-s2;
+float dif = s1-s2;
 
     System.out.println(s1 + "-" + s2 + "=" + dif);
 } 
 
-public void Multiplication(int m1, int m2){
+public void Multiplication(float m1, float m2){
 
-    int product = m1*m2;
+    float product = m1*m2;
 
     System.out.println(m1 + "*" + m2 + "=" + product);
 } 
 
-public void Division(int d1, int d2){
+public void Division(float d1, float d2){
 
-    int divide = d1/d2;
+    float divide = d1/d2;
 
     System.out.println(d1 + "/" + d2 + "=" + divide);
 } 
@@ -60,9 +60,9 @@ public void Division(int d1, int d2){
 
        System.out.println("Enter two whole numbers");
 
-       int a1 = obj.getNum1();
+       float a1 = obj.getNum1();
 
-       int a2 = obj.getNum2();
+       float a2 = obj.getNum2();
 
        System.out.println("Would you like the numbers to perform addition, subtraction, multiplication, or division, put + for addition, - for subtraction, * for multiplication, and / for division?");
        
