@@ -51,7 +51,14 @@ public void Division(float d1, float d2){
 
     float divide = d1/d2;
 
+    if(d2==0){
+
+    System.out.println("Error: Divide By Zero");
+    }
+    else {
+
     System.out.println(d1 + "/" + d2 + "=" + divide);
+}
 } 
 
     public static void main(String[] args) {
@@ -85,7 +92,7 @@ public void Division(float d1, float d2){
 
        if(o1.equals("/")){
 
-        obj.Division(a1, a2);;
+        obj.Division(a1, a2);
        }
     }
 }
